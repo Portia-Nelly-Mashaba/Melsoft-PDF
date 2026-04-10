@@ -1,8 +1,25 @@
-/* Header / logo (Challenge One doc branding) */
-.doc-header {
+
+
+/* Each sheet = one PDF page */
+.doc-page {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 28px 32px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 40px rgba(17, 24, 39, 0.08);
+  min-height: 0;
+}
+
+.doc-page:last-child {
+  margin-bottom: 0;
+}
+
+.doc-page__top {
   margin: 0 0 20px;
   padding-bottom: 16px;
-
+  border-bottom: 1px solid var(--rule);
 }
 
 .doc-logo {
@@ -11,3 +28,4 @@
   width: 100%;
   height: auto;
 }
+
